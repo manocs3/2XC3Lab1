@@ -2,16 +2,18 @@ studentNum = [1,2,3,4,5,6,7]
 groups = [[1,3],[2,4,5],[6,7]]
 
 def are_valid_groups(studentNum, groups):
+    flattenedGroups = []
     count = 0
-    for ID in studentNum:
-        for group in groups:
-            for id in group:
-                if  ID == id:
-                    count = count + 1
-    if count == len(studentNum):
-        print("True") 
-    else:
-        print("Flase")
+    for group in groups:
+        for i in group:
+            flattenedGroups.append(i)
+            
+    check =  all(id in flattenedGroups for id in studentNum)
+ 
+    if check is True:
+        print("groups contains all studentIDs")    
+    else :
+        print("No, groups doesn't have all studentIDs.")
     
 
 def goodGroups(groups):
