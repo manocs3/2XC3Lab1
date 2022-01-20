@@ -1,5 +1,5 @@
 studentNum = [1,2,3,4,5,6,7]
-groups = [[1,3],[2,4,5,5],[6,7]]
+groups = [[1,3],[2,4,5],[6,7]]
 
 def are_valid_groups(studentNum, groups):
     count = 0
