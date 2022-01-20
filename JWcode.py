@@ -3,7 +3,6 @@ groups = [[1,3],[2,4,5],[6,7]]
 
 def are_valid_groups(studentNum, groups):
     flattenedGroups = []
-    count = 0
     for group in groups:
         for i in group:
             flattenedGroups.append(i)
